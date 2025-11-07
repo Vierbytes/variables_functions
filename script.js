@@ -48,3 +48,19 @@ function checkEligibility(age, isEmployed) {
 }
 
 checkEligibility(age, isEmployed)
+
+
+function discountedCost(price, quantity, taxRate, discount = 0) {
+    if (isNaN(price) || isNaN(quantity) || isNaN(taxRate)) {
+        console.log("Invalid input. Please use numbers.");
+        return;
+    }
+        const subtotal = price * quantity;
+        const discountedAmount = subtotal * (1 - discount);
+        const totalCost = discountedAmount * (1 + taxRate);
+        console.log(totalCost);
+
+}
+
+discountedCost(5, 10, .7)
+discountedCost(5, 10, .7, .1)
