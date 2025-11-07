@@ -14,3 +14,15 @@ function fullName(firstName, lastName) {
 }
 
 fullName()
+
+function calculateTotalCost(price, quantity, taxRate) {
+    if (isNaN(price, quantity, taxRate)) {
+        console.log("Invaild input. Please used numbers.");
+    }
+    else {
+    let totalCost = (price * quantity) * (1 + taxRate)
+    console.log(totalCost);
+    }
+}
+
+calculateTotalCost(5,15,.7)
