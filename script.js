@@ -26,3 +26,25 @@ function calculateTotalCost(price, quantity, taxRate) {
 }
 
 calculateTotalCost(5,15,.7)
+
+
+age = prompt("Age: ")
+isEmployed = prompt("Are you employed? (Y/N) ")
+
+function checkEligibility(age, isEmployed) {
+    if (age < 18) {
+        console.log("Sorry you're Not Eligible.");
+        return
+    }
+    else if ( age >= 18 && isEmployed == "Y") {
+        console.log("You're Eligible");
+        return
+    }
+    else (age >= 18 && isEmployed == "N")
+    {
+        console.log("You're Condiditionally Eligible.");
+        return
+    }
+}
+
+checkEligibility(age, isEmployed)
